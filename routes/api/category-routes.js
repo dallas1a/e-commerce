@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { Category, Product } = require('../../models');
 
-
+//creates all routes for categories Get One by ID , All, Update and Delete 
 router.get('/', (req, res) => {
   Category.findAll({
     include: {

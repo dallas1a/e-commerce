@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { Tag, Product, ProductTag } = require('../../models');
 
-
+//creates all routes for Tags Get One by ID , All, Update and Delete 
 
 router.get('/', (req, res) => {
   Tag.findAll({

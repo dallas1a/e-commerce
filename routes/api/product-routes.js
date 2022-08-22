@@ -1,9 +1,9 @@
 const router = require('express').Router();
 const { Product, Category, Tag, ProductTag } = require('../../models');
 
-// The `/api/products` endpoint
+//creates all routes for products Get One by ID , All, Update and Delete 
 
-// get all products
+
 router.get('/', (req, res) => {
   Product.findAll({
     attributes: ['id', 'product_name', 'price', 'stock'],
